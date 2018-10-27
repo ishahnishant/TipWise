@@ -19,9 +19,11 @@ public class MainActivity extends AppCompatActivity {
     public void calculate(View v){
         EditText text = (EditText)findViewById(R.id.amount);
         String sr = text.getText().toString();
-        
+        int srr = Integer.valueOf(sr);
+
         TextView show = (TextView) findViewById(R.id.showbill);
-        show.setText(sr);
+        srr= srr*2;
+        show.setText(String.valueOf(srr));
 
         }
 
