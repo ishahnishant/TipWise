@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">TipWise</string>
     <string name="Amount">Amount</string>
+    <string name="BillAmount">Bill Amount</string>
     <string name="buton">Button</string>
+    <string name="TipAmount">Tip Amount</string>
+    <string name="tipPercent">Tip Percentage</string>
 </resources>

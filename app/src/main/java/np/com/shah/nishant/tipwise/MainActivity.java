@@ -17,13 +17,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void calculate(View v){
-        EditText text = (EditText)findViewById(R.id.amount);
+        EditText text = (EditText)findViewById(R.id.billAmount);
         String sr = text.getText().toString();
         int srr = Integer.valueOf(sr);
 
+        EditText percent = (EditText)findViewById(R.id.tipPercent);
+        int tipP = Integer.valueOf(percent.getText().toString());
+
         TextView show = (TextView) findViewById(R.id.showbill);
-        srr= srr*2;
-        show.setText(String.valueOf(srr));
+        int totalbill= srr+tipP*srr/100;
+        show.setText(String.valueOf(totalbill));
+
+        TextView tip = (TextView)findViewById(R.id.tipAmount);
+        int tamount = srr*tipP/100;
+        tip.setText(String.valueOf(tamount));
 
         }
 
