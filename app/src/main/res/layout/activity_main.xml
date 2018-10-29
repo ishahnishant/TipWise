@@ -10,34 +10,33 @@
     <EditText
         android:id="@+id/billAmount"
         style="@android:style/Widget.EditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="179dp"
+        android:layout_marginTop="148dp"
         android:ems="10"
         android:hint="@string/BillAmount"
-        android:inputType="number"
+        android:inputType="number|numberDecimal"
         android:textAlignment="center" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="214dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="295dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="206dp"
         android:onClick="calculate"
-        android:text="@string/buton" />
+        android:text="@string/calculateTip" />
 
     <EditText
         android:id="@+id/showbill"
         style="@android:style/Widget.EditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="142dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tipAmount"
         android:ems="10"
         android:hint="@string/Amount"
         android:inputType="number"
@@ -45,11 +44,10 @@
 
     <EditText
         android:id="@+id/tipPercent"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="244dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/billAmount"
         android:ems="10"
         android:hint="@string/tipPercent"
         android:inputType="number"
@@ -57,11 +55,11 @@
 
     <EditText
         android:id="@+id/tipAmount"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="218dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="288dp"
         android:ems="10"
         android:hint="@string/TipAmount"
         android:inputType="number"

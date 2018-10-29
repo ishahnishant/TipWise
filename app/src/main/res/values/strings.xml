@@ -5,4 +5,5 @@
     <string name="buton">Button</string>
     <string name="TipAmount">Tip Amount</string>
     <string name="tipPercent">Tip Percentage</string>
+    <string name="calculateTip">Calculate Tip</string>
 </resources>

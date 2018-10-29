@@ -15,22 +15,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+    //Calculate the tip
     public void calculate(View v){
+        //Get and store the value of the bill amount from user
         EditText text = (EditText)findViewById(R.id.billAmount);
         String sr = text.getText().toString();
-        int srr = Integer.valueOf(sr);
+        double srr = Double.valueOf(sr);
 
+        //Get the value of tip percentage from user
         EditText percent = (EditText)findViewById(R.id.tipPercent);
-        int tipP = Integer.valueOf(percent.getText().toString());
+        int tipP = Double.valueOf(percent.getText().toString());
 
+        //Display the Total Bill to user
+        //Int needs to be cast into String because TextView can take String only
         TextView show = (TextView) findViewById(R.id.showbill);
-        int totalbill= srr+tipP*srr/100;
-        show.setText(String.valueOf(totalbill));
+        double totalBill= srr+tipP*srr/100;
+        show.setText(String.valueOf(totalBill));
 
+        //Display the Tip Amount to User
         TextView tip = (TextView)findViewById(R.id.tipAmount);
-        int tamount = srr*tipP/100;
-        tip.setText(String.valueOf(tamount));
+        double tAmount = srr*tipP/100;
+        tip.setText(String.valueOf(tAmount));
 
         }
 
